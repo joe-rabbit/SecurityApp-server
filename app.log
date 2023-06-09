@@ -1,0 +1,201 @@
+DEBUG:requests.packages.urllib3.util.retry:Converted retries value: 3 -> Retry(total=3, connect=None, read=None, redirect=None)
+INFO:werkzeug:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://192.168.10.217:5000
+INFO:werkzeug:[33mPress CTRL+C to quit[0m
+ERROR:engineio.server:The WebSocket transport is not available, you must install a WebSocket server that is compatible with your async mode to enable it. See the documentation for details. (further occurrences of this error will be logged with level INFO)
+INFO:werkzeug:192.168.10.172 - - [09/Jun/2023 10:06:45] "GET /socket.io/?EIO=4&transport=polling HTTP/1.1" 200 -
+INFO:werkzeug:192.168.10.172 - - [09/Jun/2023 10:06:45] "POST /socket.io/?EIO=4&transport=polling&sid=sFsHbFvOpKWCig51AAAA HTTP/1.1" 200 -
+INFO:werkzeug:192.168.10.172 - - [09/Jun/2023 10:06:45] "GET /socket.io/?EIO=4&transport=polling&sid=sFsHbFvOpKWCig51AAAA HTTP/1.1" 200 -
+INFO:werkzeug:192.168.10.217 - - [09/Jun/2023 10:06:46] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:192.168.10.217 - - [09/Jun/2023 10:06:46] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+INFO:werkzeug:192.168.10.172 - - [09/Jun/2023 10:06:55] "POST /socket.io/?EIO=4&transport=polling&sid=sFsHbFvOpKWCig51AAAA HTTP/1.1" 200 -
+INFO:werkzeug:192.168.10.172 - - [09/Jun/2023 10:06:55] "GET /socket.io/?EIO=4&transport=polling&sid=sFsHbFvOpKWCig51AAAA HTTP/1.1" 200 -
+INFO:werkzeug:192.168.10.172 - - [09/Jun/2023 10:06:56] "GET /socket.io/?EIO=4&transport=polling HTTP/1.1" 200 -
+INFO:werkzeug:192.168.10.172 - - [09/Jun/2023 10:06:56] "POST /socket.io/?EIO=4&transport=polling&sid=T1EUQJpi60yftrwdAAAC HTTP/1.1" 200 -
+INFO:werkzeug:192.168.10.172 - - [09/Jun/2023 10:06:56] "GET /socket.io/?EIO=4&transport=polling&sid=T1EUQJpi60yftrwdAAAC HTTP/1.1" 200 -
+INFO:requests.packages.urllib3.connectionpool:Starting new HTTPS connection (1): www.googleapis.com
+DEBUG:requests.packages.urllib3.connectionpool:"POST /identitytoolkit/v3/relyingparty/verifyPassword?key=AIzaSyA_xLGCT3PKw-FhqLnPaoCN1rbPqw1Yki0 HTTP/1.1" 200 None
+INFO:root:dusdNSbpWYYcE33DoostUA3jqWp1
+INFO:werkzeug:192.168.10.217 - - [09/Jun/2023 10:07:05] "POST / HTTP/1.1" 200 -
+INFO:werkzeug:192.168.10.172 - - [09/Jun/2023 10:07:08] "POST /socket.io/?EIO=4&transport=polling&sid=T1EUQJpi60yftrwdAAAC HTTP/1.1" 200 -
+INFO:werkzeug:192.168.10.172 - - [09/Jun/2023 10:07:08] "GET /socket.io/?EIO=4&transport=polling&sid=T1EUQJpi60yftrwdAAAC HTTP/1.1" 200 -
+INFO:werkzeug:192.168.10.172 - - [09/Jun/2023 10:07:09] "GET /socket.io/?EIO=4&transport=polling HTTP/1.1" 200 -
+INFO:werkzeug:192.168.10.172 - - [09/Jun/2023 10:07:09] "POST /socket.io/?EIO=4&transport=polling&sid=78as5C5N3nSWpE8RAAAE HTTP/1.1" 200 -
+INFO:werkzeug:192.168.10.172 - - [09/Jun/2023 10:07:09] "GET /socket.io/?EIO=4&transport=polling&sid=78as5C5N3nSWpE8RAAAE HTTP/1.1" 200 -
+INFO:root:dusdNSbpWYYcE33DoostUA3jqWp1camera
+INFO:werkzeug:192.168.10.217 - - [09/Jun/2023 10:07:12] "POST /camera HTTP/1.1" 200 -
+INFO:werkzeug:192.168.10.172 - - [09/Jun/2023 10:07:12] "GET /socket.io/?EIO=4&transport=polling&sid=78as5C5N3nSWpE8RAAAE HTTP/1.1" 200 -
+INFO:root:dusdNSbpWYYcE33DoostUA3jqWp1findphone
+INFO:werkzeug:192.168.10.217 - - [09/Jun/2023 10:07:20] "POST /findphone HTTP/1.1" 200 -
+INFO:werkzeug:192.168.10.172 - - [09/Jun/2023 10:07:20] "GET /socket.io/?EIO=4&transport=polling&sid=78as5C5N3nSWpE8RAAAE HTTP/1.1" 200 -
+INFO:root:dusdNSbpWYYcE33DoostUA3jqWp1foundphone
+INFO:werkzeug:192.168.10.217 - - [09/Jun/2023 10:07:22] "POST /foundphone HTTP/1.1" 200 -
+INFO:werkzeug:192.168.10.172 - - [09/Jun/2023 10:07:22] "GET /socket.io/?EIO=4&transport=polling&sid=78as5C5N3nSWpE8RAAAE HTTP/1.1" 200 -
+INFO:werkzeug:192.168.10.172 - - [09/Jun/2023 10:07:32] "POST /socket.io/?EIO=4&transport=polling&sid=78as5C5N3nSWpE8RAAAE HTTP/1.1" 200 -
+INFO:werkzeug:192.168.10.172 - - [09/Jun/2023 10:07:32] "GET /socket.io/?EIO=4&transport=polling&sid=78as5C5N3nSWpE8RAAAE HTTP/1.1" 200 -
+INFO:werkzeug:192.168.10.172 - - [09/Jun/2023 10:07:33] "GET /socket.io/?EIO=4&transport=polling HTTP/1.1" 200 -
+INFO:werkzeug:192.168.10.172 - - [09/Jun/2023 10:07:33] "POST /socket.io/?EIO=4&transport=polling&sid=s-XOQUMXBRs2Vc-TAAAG HTTP/1.1" 200 -
+INFO:werkzeug:192.168.10.172 - - [09/Jun/2023 10:07:33] "GET /socket.io/?EIO=4&transport=polling&sid=s-XOQUMXBRs2Vc-TAAAG HTTP/1.1" 200 -
+INFO:werkzeug:192.168.10.172 - - [09/Jun/2023 10:07:43] "GET /socket.io/?EIO=4&transport=polling&sid=s-XOQUMXBRs2Vc-TAAAG HTTP/1.1" 200 -
+INFO:werkzeug:192.168.10.172 - - [09/Jun/2023 10:07:43] "POST /socket.io/?EIO=4&transport=polling&sid=s-XOQUMXBRs2Vc-TAAAG HTTP/1.1" 200 -
+INFO:werkzeug:192.168.10.172 - - [09/Jun/2023 10:07:44] "GET /socket.io/?EIO=4&transport=polling HTTP/1.1" 200 -
+INFO:werkzeug:192.168.10.172 - - [09/Jun/2023 10:07:44] "POST /socket.io/?EIO=4&transport=polling&sid=GQF6zAbYmvFicK1aAAAI HTTP/1.1" 200 -
+INFO:werkzeug:192.168.10.172 - - [09/Jun/2023 10:07:44] "GET /socket.io/?EIO=4&transport=polling&sid=GQF6zAbYmvFicK1aAAAI HTTP/1.1" 200 -
+INFO:werkzeug:192.168.10.172 - - [09/Jun/2023 10:07:54] "POST /socket.io/?EIO=4&transport=polling&sid=GQF6zAbYmvFicK1aAAAI HTTP/1.1" 200 -
+INFO:werkzeug:192.168.10.172 - - [09/Jun/2023 10:07:54] "GET /socket.io/?EIO=4&transport=polling&sid=GQF6zAbYmvFicK1aAAAI HTTP/1.1" 200 -
+INFO:werkzeug:192.168.10.172 - - [09/Jun/2023 10:07:55] "GET /socket.io/?EIO=4&transport=polling HTTP/1.1" 200 -
+INFO:werkzeug:192.168.10.172 - - [09/Jun/2023 10:07:55] "POST /socket.io/?EIO=4&transport=polling&sid=-eOUup71ZPkQK4aPAAAK HTTP/1.1" 200 -
+INFO:werkzeug:192.168.10.172 - - [09/Jun/2023 10:07:55] "GET /socket.io/?EIO=4&transport=polling&sid=-eOUup71ZPkQK4aPAAAK HTTP/1.1" 200 -
+INFO:root:dusdNSbpWYYcE33DoostUA3jqWp1findphone
+INFO:werkzeug:192.168.10.217 - - [09/Jun/2023 10:08:04] "POST /findphone HTTP/1.1" 200 -
+INFO:werkzeug:192.168.10.172 - - [09/Jun/2023 10:08:04] "GET /socket.io/?EIO=4&transport=polling&sid=-eOUup71ZPkQK4aPAAAK HTTP/1.1" 200 -
+INFO:root:dusdNSbpWYYcE33DoostUA3jqWp1foundphone
+INFO:werkzeug:192.168.10.217 - - [09/Jun/2023 10:08:06] "POST /foundphone HTTP/1.1" 200 -
+INFO:werkzeug:192.168.10.172 - - [09/Jun/2023 10:08:06] "GET /socket.io/?EIO=4&transport=polling&sid=-eOUup71ZPkQK4aPAAAK HTTP/1.1" 200 -
+INFO:werkzeug:192.168.10.172 - - [09/Jun/2023 10:08:16] "POST /socket.io/?EIO=4&transport=polling&sid=-eOUup71ZPkQK4aPAAAK HTTP/1.1" 200 -
+INFO:werkzeug:192.168.10.172 - - [09/Jun/2023 10:08:16] "GET /socket.io/?EIO=4&transport=polling&sid=-eOUup71ZPkQK4aPAAAK HTTP/1.1" 200 -
+INFO:werkzeug:192.168.10.172 - - [09/Jun/2023 10:08:17] "GET /socket.io/?EIO=4&transport=polling HTTP/1.1" 200 -
+INFO:werkzeug:192.168.10.172 - - [09/Jun/2023 10:08:17] "POST /socket.io/?EIO=4&transport=polling&sid=SmUbxNbrpQuEWMryAAAM HTTP/1.1" 200 -
+INFO:werkzeug:192.168.10.172 - - [09/Jun/2023 10:08:17] "GET /socket.io/?EIO=4&transport=polling&sid=SmUbxNbrpQuEWMryAAAM HTTP/1.1" 200 -
+INFO:root:dusdNSbpWYYcE33DoostUA3jqWp1message
+INFO:werkzeug:192.168.10.217 - - [09/Jun/2023 10:08:24] "POST /call HTTP/1.1" 200 -
+INFO:werkzeug:192.168.10.172 - - [09/Jun/2023 10:08:24] "GET /socket.io/?EIO=4&transport=polling&sid=SmUbxNbrpQuEWMryAAAM HTTP/1.1" 200 -
+INFO:werkzeug:192.168.10.172 - - [09/Jun/2023 10:08:35] "POST /socket.io/?EIO=4&transport=polling&sid=SmUbxNbrpQuEWMryAAAM HTTP/1.1" 200 -
+INFO:werkzeug:192.168.10.172 - - [09/Jun/2023 10:08:35] "GET /socket.io/?EIO=4&transport=polling&sid=SmUbxNbrpQuEWMryAAAM HTTP/1.1" 200 -
+INFO:werkzeug:192.168.10.172 - - [09/Jun/2023 10:08:36] "GET /socket.io/?EIO=4&transport=polling HTTP/1.1" 200 -
+INFO:werkzeug:192.168.10.172 - - [09/Jun/2023 10:08:36] "POST /socket.io/?EIO=4&transport=polling&sid=LIp-4-Iqs2fMgWXUAAAO HTTP/1.1" 200 -
+INFO:werkzeug:192.168.10.172 - - [09/Jun/2023 10:08:36] "GET /socket.io/?EIO=4&transport=polling&sid=LIp-4-Iqs2fMgWXUAAAO HTTP/1.1" 200 -
+INFO:root:dusdNSbpWYYcE33DoostUA3jqWp1findphone
+INFO:werkzeug:192.168.10.217 - - [09/Jun/2023 10:08:41] "POST /findphone HTTP/1.1" 200 -
+INFO:werkzeug:192.168.10.172 - - [09/Jun/2023 10:08:41] "GET /socket.io/?EIO=4&transport=polling&sid=LIp-4-Iqs2fMgWXUAAAO HTTP/1.1" 200 -
+INFO:root:dusdNSbpWYYcE33DoostUA3jqWp1foundphone
+INFO:werkzeug:192.168.10.217 - - [09/Jun/2023 10:08:43] "POST /foundphone HTTP/1.1" 200 -
+INFO:werkzeug:192.168.10.172 - - [09/Jun/2023 10:08:43] "GET /socket.io/?EIO=4&transport=polling&sid=LIp-4-Iqs2fMgWXUAAAO HTTP/1.1" 200 -
+INFO:root:dusdNSbpWYYcE33DoostUA3jqWp1camera
+INFO:werkzeug:192.168.10.217 - - [09/Jun/2023 10:08:53] "POST /camera HTTP/1.1" 200 -
+INFO:werkzeug:192.168.10.172 - - [09/Jun/2023 10:08:53] "GET /socket.io/?EIO=4&transport=polling&sid=LIp-4-Iqs2fMgWXUAAAO HTTP/1.1" 200 -
+INFO:werkzeug:192.168.10.172 - - [09/Jun/2023 10:09:01] "GET /socket.io/?EIO=4&transport=polling&sid=LIp-4-Iqs2fMgWXUAAAO HTTP/1.1" 200 -
+INFO:werkzeug:192.168.10.172 - - [09/Jun/2023 10:09:01] "POST /socket.io/?EIO=4&transport=polling&sid=LIp-4-Iqs2fMgWXUAAAO HTTP/1.1" 200 -
+INFO:werkzeug:192.168.10.172 - - [09/Jun/2023 10:09:11] "POST /socket.io/?EIO=4&transport=polling&sid=LIp-4-Iqs2fMgWXUAAAO HTTP/1.1" 200 -
+INFO:werkzeug:192.168.10.172 - - [09/Jun/2023 10:09:11] "GET /socket.io/?EIO=4&transport=polling&sid=LIp-4-Iqs2fMgWXUAAAO HTTP/1.1" 200 -
+INFO:werkzeug:192.168.10.172 - - [09/Jun/2023 10:09:12] "GET /socket.io/?EIO=4&transport=polling HTTP/1.1" 200 -
+INFO:werkzeug:192.168.10.172 - - [09/Jun/2023 10:09:12] "POST /socket.io/?EIO=4&transport=polling&sid=oWIe4zfiFWPm5x71AAAQ HTTP/1.1" 200 -
+INFO:werkzeug:192.168.10.172 - - [09/Jun/2023 10:09:12] "GET /socket.io/?EIO=4&transport=polling&sid=oWIe4zfiFWPm5x71AAAQ HTTP/1.1" 200 -
+INFO:werkzeug:192.168.10.172 - - [09/Jun/2023 10:09:23] "POST /socket.io/?EIO=4&transport=polling&sid=oWIe4zfiFWPm5x71AAAQ HTTP/1.1" 200 -
+INFO:werkzeug:192.168.10.172 - - [09/Jun/2023 10:09:23] "GET /socket.io/?EIO=4&transport=polling&sid=oWIe4zfiFWPm5x71AAAQ HTTP/1.1" 200 -
+INFO:werkzeug:192.168.10.172 - - [09/Jun/2023 10:09:24] "GET /socket.io/?EIO=4&transport=polling HTTP/1.1" 200 -
+INFO:werkzeug:192.168.10.172 - - [09/Jun/2023 10:09:24] "POST /socket.io/?EIO=4&transport=polling&sid=wGG_Nw8HVJICNHLJAAAS HTTP/1.1" 200 -
+INFO:werkzeug:192.168.10.172 - - [09/Jun/2023 10:09:24] "GET /socket.io/?EIO=4&transport=polling&sid=wGG_Nw8HVJICNHLJAAAS HTTP/1.1" 200 -
+INFO:werkzeug:192.168.10.172 - - [09/Jun/2023 10:09:34] "POST /socket.io/?EIO=4&transport=polling&sid=wGG_Nw8HVJICNHLJAAAS HTTP/1.1" 200 -
+INFO:werkzeug:192.168.10.172 - - [09/Jun/2023 10:09:34] "GET /socket.io/?EIO=4&transport=polling&sid=wGG_Nw8HVJICNHLJAAAS HTTP/1.1" 200 -
+INFO:werkzeug:192.168.10.172 - - [09/Jun/2023 10:09:34] "GET /socket.io/?EIO=4&transport=polling HTTP/1.1" 200 -
+INFO:werkzeug:192.168.10.172 - - [09/Jun/2023 10:09:34] "POST /socket.io/?EIO=4&transport=polling&sid=vXMcKCY6XvzqJgewAAAU HTTP/1.1" 200 -
+INFO:werkzeug:192.168.10.172 - - [09/Jun/2023 10:09:34] "GET /socket.io/?EIO=4&transport=polling&sid=vXMcKCY6XvzqJgewAAAU HTTP/1.1" 200 -
+INFO:werkzeug:192.168.10.172 - - [09/Jun/2023 10:09:58] "POST /socket.io/?EIO=4&transport=polling&sid=vXMcKCY6XvzqJgewAAAU HTTP/1.1" 200 -
+INFO:werkzeug:192.168.10.172 - - [09/Jun/2023 10:09:58] "GET /socket.io/?EIO=4&transport=polling&sid=vXMcKCY6XvzqJgewAAAU HTTP/1.1" 200 -
+INFO:werkzeug:192.168.10.172 - - [09/Jun/2023 10:09:59] "GET /socket.io/?EIO=4&transport=polling HTTP/1.1" 200 -
+INFO:werkzeug:192.168.10.172 - - [09/Jun/2023 10:10:00] "POST /socket.io/?EIO=4&transport=polling&sid=5uZuhtGKB4JywwaKAAAW HTTP/1.1" 200 -
+INFO:werkzeug:192.168.10.172 - - [09/Jun/2023 10:10:00] "GET /socket.io/?EIO=4&transport=polling&sid=5uZuhtGKB4JywwaKAAAW HTTP/1.1" 200 -
+INFO:root:dusdNSbpWYYcE33DoostUA3jqWp1gps_data
+INFO:werkzeug:192.168.10.217 - - [09/Jun/2023 10:10:03] "POST /gps HTTP/1.1" 200 -
+INFO:werkzeug:192.168.10.172 - - [09/Jun/2023 10:10:03] "GET /socket.io/?EIO=4&transport=polling&sid=5uZuhtGKB4JywwaKAAAW HTTP/1.1" 200 -
+INFO:werkzeug:192.168.10.172 - - [09/Jun/2023 10:10:14] "POST /socket.io/?EIO=4&transport=polling&sid=5uZuhtGKB4JywwaKAAAW HTTP/1.1" 200 -
+INFO:werkzeug:192.168.10.172 - - [09/Jun/2023 10:10:14] "GET /socket.io/?EIO=4&transport=polling&sid=5uZuhtGKB4JywwaKAAAW HTTP/1.1" 200 -
+INFO:werkzeug:192.168.10.172 - - [09/Jun/2023 10:10:15] "GET /socket.io/?EIO=4&transport=polling HTTP/1.1" 200 -
+INFO:werkzeug:192.168.10.172 - - [09/Jun/2023 10:10:15] "POST /socket.io/?EIO=4&transport=polling&sid=RlOELhDhv6la0_rkAAAY HTTP/1.1" 200 -
+INFO:werkzeug:192.168.10.172 - - [09/Jun/2023 10:10:15] "GET /socket.io/?EIO=4&transport=polling&sid=RlOELhDhv6la0_rkAAAY HTTP/1.1" 200 -
+INFO:werkzeug:192.168.10.172 - - [09/Jun/2023 10:10:25] "POST /socket.io/?EIO=4&transport=polling&sid=RlOELhDhv6la0_rkAAAY HTTP/1.1" 200 -
+INFO:werkzeug:192.168.10.172 - - [09/Jun/2023 10:10:25] "GET /socket.io/?EIO=4&transport=polling&sid=RlOELhDhv6la0_rkAAAY HTTP/1.1" 200 -
+INFO:werkzeug:192.168.10.172 - - [09/Jun/2023 10:10:26] "GET /socket.io/?EIO=4&transport=polling HTTP/1.1" 200 -
+INFO:werkzeug:192.168.10.172 - - [09/Jun/2023 10:10:27] "POST /socket.io/?EIO=4&transport=polling&sid=HFiCreMyuEHsVdbnAAAa HTTP/1.1" 200 -
+INFO:werkzeug:192.168.10.172 - - [09/Jun/2023 10:10:27] "GET /socket.io/?EIO=4&transport=polling&sid=HFiCreMyuEHsVdbnAAAa HTTP/1.1" 200 -
+INFO:werkzeug:192.168.10.172 - - [09/Jun/2023 10:10:37] "GET /socket.io/?EIO=4&transport=polling&sid=HFiCreMyuEHsVdbnAAAa HTTP/1.1" 200 -
+INFO:werkzeug:192.168.10.172 - - [09/Jun/2023 10:10:37] "POST /socket.io/?EIO=4&transport=polling&sid=HFiCreMyuEHsVdbnAAAa HTTP/1.1" 200 -
+INFO:werkzeug:192.168.10.172 - - [09/Jun/2023 10:10:38] "GET /socket.io/?EIO=4&transport=polling HTTP/1.1" 200 -
+INFO:werkzeug:192.168.10.172 - - [09/Jun/2023 10:10:38] "POST /socket.io/?EIO=4&transport=polling&sid=JEuZ3rkbe21tPhtpAAAc HTTP/1.1" 200 -
+INFO:werkzeug:192.168.10.172 - - [09/Jun/2023 10:10:38] "GET /socket.io/?EIO=4&transport=polling&sid=JEuZ3rkbe21tPhtpAAAc HTTP/1.1" 200 -
+INFO:werkzeug:192.168.10.172 - - [09/Jun/2023 10:10:48] "POST /socket.io/?EIO=4&transport=polling&sid=JEuZ3rkbe21tPhtpAAAc HTTP/1.1" 200 -
+INFO:werkzeug:192.168.10.172 - - [09/Jun/2023 10:10:48] "GET /socket.io/?EIO=4&transport=polling&sid=JEuZ3rkbe21tPhtpAAAc HTTP/1.1" 200 -
+INFO:werkzeug:192.168.10.172 - - [09/Jun/2023 10:10:50] "GET /socket.io/?EIO=4&transport=polling HTTP/1.1" 200 -
+INFO:werkzeug:192.168.10.172 - - [09/Jun/2023 10:10:50] "POST /socket.io/?EIO=4&transport=polling&sid=HG69dIlr3wopWeGpAAAe HTTP/1.1" 200 -
+INFO:werkzeug:192.168.10.172 - - [09/Jun/2023 10:10:50] "GET /socket.io/?EIO=4&transport=polling&sid=HG69dIlr3wopWeGpAAAe HTTP/1.1" 200 -
+INFO:werkzeug:192.168.10.172 - - [09/Jun/2023 10:11:00] "POST /socket.io/?EIO=4&transport=polling&sid=HG69dIlr3wopWeGpAAAe HTTP/1.1" 200 -
+INFO:werkzeug:192.168.10.172 - - [09/Jun/2023 10:11:00] "GET /socket.io/?EIO=4&transport=polling&sid=HG69dIlr3wopWeGpAAAe HTTP/1.1" 200 -
+INFO:root:dusdNSbpWYYcE33DoostUA3jqWp1findphone
+INFO:werkzeug:192.168.10.217 - - [09/Jun/2023 10:11:01] "POST /findphone HTTP/1.1" 200 -
+INFO:werkzeug:192.168.10.172 - - [09/Jun/2023 10:11:01] "GET /socket.io/?EIO=4&transport=polling HTTP/1.1" 200 -
+INFO:werkzeug:192.168.10.172 - - [09/Jun/2023 10:11:01] "POST /socket.io/?EIO=4&transport=polling&sid=FNwnPQd_KhrB6ZxHAAAg HTTP/1.1" 200 -
+INFO:werkzeug:192.168.10.172 - - [09/Jun/2023 10:11:01] "GET /socket.io/?EIO=4&transport=polling&sid=FNwnPQd_KhrB6ZxHAAAg HTTP/1.1" 200 -
+INFO:root:dusdNSbpWYYcE33DoostUA3jqWp1findphone
+INFO:werkzeug:192.168.10.217 - - [09/Jun/2023 10:11:04] "POST /findphone HTTP/1.1" 200 -
+INFO:werkzeug:192.168.10.172 - - [09/Jun/2023 10:11:04] "GET /socket.io/?EIO=4&transport=polling&sid=FNwnPQd_KhrB6ZxHAAAg HTTP/1.1" 200 -
+INFO:root:dusdNSbpWYYcE33DoostUA3jqWp1foundphone
+INFO:werkzeug:192.168.10.217 - - [09/Jun/2023 10:11:06] "POST /foundphone HTTP/1.1" 200 -
+INFO:werkzeug:192.168.10.172 - - [09/Jun/2023 10:11:06] "GET /socket.io/?EIO=4&transport=polling&sid=FNwnPQd_KhrB6ZxHAAAg HTTP/1.1" 200 -
+INFO:werkzeug:192.168.10.172 - - [09/Jun/2023 10:11:16] "POST /socket.io/?EIO=4&transport=polling&sid=FNwnPQd_KhrB6ZxHAAAg HTTP/1.1" 200 -
+INFO:werkzeug:192.168.10.172 - - [09/Jun/2023 10:11:16] "GET /socket.io/?EIO=4&transport=polling&sid=FNwnPQd_KhrB6ZxHAAAg HTTP/1.1" 200 -
+INFO:werkzeug:192.168.10.172 - - [09/Jun/2023 10:11:18] "GET /socket.io/?EIO=4&transport=polling HTTP/1.1" 200 -
+INFO:werkzeug:192.168.10.172 - - [09/Jun/2023 10:11:18] "POST /socket.io/?EIO=4&transport=polling&sid=9L1Woi5_oMJyxHihAAAi HTTP/1.1" 200 -
+INFO:werkzeug:192.168.10.172 - - [09/Jun/2023 10:11:18] "GET /socket.io/?EIO=4&transport=polling&sid=9L1Woi5_oMJyxHihAAAi HTTP/1.1" 200 -
+INFO:root:dusdNSbpWYYcE33DoostUA3jqWp1camera
+INFO:werkzeug:192.168.10.217 - - [09/Jun/2023 10:11:19] "POST /camera HTTP/1.1" 200 -
+INFO:werkzeug:192.168.10.172 - - [09/Jun/2023 10:11:19] "GET /socket.io/?EIO=4&transport=polling&sid=9L1Woi5_oMJyxHihAAAi HTTP/1.1" 200 -
+INFO:root:dusdNSbpWYYcE33DoostUA3jqWp1camera
+INFO:werkzeug:192.168.10.217 - - [09/Jun/2023 10:11:24] "POST /camera HTTP/1.1" 200 -
+INFO:werkzeug:192.168.10.172 - - [09/Jun/2023 10:11:24] "GET /socket.io/?EIO=4&transport=polling&sid=9L1Woi5_oMJyxHihAAAi HTTP/1.1" 200 -
+INFO:root:dusdNSbpWYYcE33DoostUA3jqWp1camera
+INFO:werkzeug:192.168.10.217 - - [09/Jun/2023 10:11:25] "POST /camera HTTP/1.1" 200 -
+INFO:werkzeug:192.168.10.172 - - [09/Jun/2023 10:11:28] "GET /socket.io/?EIO=4&transport=polling&sid=9L1Woi5_oMJyxHihAAAi HTTP/1.1" 200 -
+INFO:werkzeug:192.168.10.172 - - [09/Jun/2023 10:11:43] "GET /socket.io/?EIO=4&transport=polling&sid=9L1Woi5_oMJyxHihAAAi HTTP/1.1" 200 -
+INFO:werkzeug:192.168.10.172 - - [09/Jun/2023 10:11:43] "POST /socket.io/?EIO=4&transport=polling&sid=9L1Woi5_oMJyxHihAAAi HTTP/1.1" 200 -
+INFO:root:dusdNSbpWYYcE33DoostUA3jqWp1camera
+INFO:werkzeug:192.168.10.217 - - [09/Jun/2023 10:11:52] "POST /camera HTTP/1.1" 200 -
+INFO:werkzeug:192.168.10.172 - - [09/Jun/2023 10:11:52] "GET /socket.io/?EIO=4&transport=polling&sid=9L1Woi5_oMJyxHihAAAi HTTP/1.1" 200 -
+INFO:root:dusdNSbpWYYcE33DoostUA3jqWp1camera
+INFO:werkzeug:192.168.10.217 - - [09/Jun/2023 10:11:59] "POST /camera HTTP/1.1" 200 -
+INFO:werkzeug:192.168.10.172 - - [09/Jun/2023 10:11:59] "GET /socket.io/?EIO=4&transport=polling&sid=9L1Woi5_oMJyxHihAAAi HTTP/1.1" 200 -
+INFO:root:dusdNSbpWYYcE33DoostUA3jqWp1camera
+INFO:werkzeug:192.168.10.217 - - [09/Jun/2023 10:12:00] "POST /camera HTTP/1.1" 200 -
+INFO:werkzeug:192.168.10.172 - - [09/Jun/2023 10:12:11] "GET /socket.io/?EIO=4&transport=polling&sid=9L1Woi5_oMJyxHihAAAi HTTP/1.1" 200 -
+INFO:werkzeug:192.168.10.172 - - [09/Jun/2023 10:12:32] "POST /socket.io/?EIO=4&transport=polling&sid=9L1Woi5_oMJyxHihAAAi HTTP/1.1" 200 -
+INFO:werkzeug:192.168.10.172 - - [09/Jun/2023 10:12:42] "POST /socket.io/?EIO=4&transport=polling&sid=9L1Woi5_oMJyxHihAAAi HTTP/1.1" 200 -
+INFO:werkzeug:192.168.10.172 - - [09/Jun/2023 10:12:42] "GET /socket.io/?EIO=4&transport=polling&sid=9L1Woi5_oMJyxHihAAAi HTTP/1.1" 200 -
+INFO:werkzeug:192.168.10.172 - - [09/Jun/2023 10:12:44] "GET /socket.io/?EIO=4&transport=polling HTTP/1.1" 200 -
+INFO:werkzeug:192.168.10.172 - - [09/Jun/2023 10:12:44] "POST /socket.io/?EIO=4&transport=polling&sid=hcCeC4F-VhtADBr6AAAk HTTP/1.1" 200 -
+INFO:werkzeug:192.168.10.172 - - [09/Jun/2023 10:12:44] "GET /socket.io/?EIO=4&transport=polling&sid=hcCeC4F-VhtADBr6AAAk HTTP/1.1" 200 -
+INFO:werkzeug:192.168.10.172 - - [09/Jun/2023 10:12:54] "POST /socket.io/?EIO=4&transport=polling&sid=hcCeC4F-VhtADBr6AAAk HTTP/1.1" 200 -
+INFO:werkzeug:192.168.10.172 - - [09/Jun/2023 10:12:54] "GET /socket.io/?EIO=4&transport=polling&sid=hcCeC4F-VhtADBr6AAAk HTTP/1.1" 200 -
+INFO:werkzeug:192.168.10.172 - - [09/Jun/2023 10:12:55] "GET /socket.io/?EIO=4&transport=polling HTTP/1.1" 200 -
+INFO:werkzeug:192.168.10.172 - - [09/Jun/2023 10:12:55] "POST /socket.io/?EIO=4&transport=polling&sid=0osqlDbNOWDAj_SeAAAm HTTP/1.1" 200 -
+INFO:werkzeug:192.168.10.172 - - [09/Jun/2023 10:12:55] "GET /socket.io/?EIO=4&transport=polling&sid=0osqlDbNOWDAj_SeAAAm HTTP/1.1" 200 -
+INFO:werkzeug:192.168.10.172 - - [09/Jun/2023 10:13:05] "POST /socket.io/?EIO=4&transport=polling&sid=0osqlDbNOWDAj_SeAAAm HTTP/1.1" 200 -
+INFO:werkzeug:192.168.10.172 - - [09/Jun/2023 10:13:05] "GET /socket.io/?EIO=4&transport=polling&sid=0osqlDbNOWDAj_SeAAAm HTTP/1.1" 200 -
+INFO:werkzeug:192.168.10.172 - - [09/Jun/2023 10:13:06] "GET /socket.io/?EIO=4&transport=polling HTTP/1.1" 200 -
+INFO:werkzeug:192.168.10.172 - - [09/Jun/2023 10:13:06] "POST /socket.io/?EIO=4&transport=polling&sid=yoZOiFQG5ECKYTWsAAAo HTTP/1.1" 200 -
+INFO:werkzeug:192.168.10.172 - - [09/Jun/2023 10:13:06] "GET /socket.io/?EIO=4&transport=polling&sid=yoZOiFQG5ECKYTWsAAAo HTTP/1.1" 200 -
+INFO:werkzeug:192.168.10.172 - - [09/Jun/2023 10:13:17] "POST /socket.io/?EIO=4&transport=polling&sid=yoZOiFQG5ECKYTWsAAAo HTTP/1.1" 200 -
+INFO:werkzeug:192.168.10.172 - - [09/Jun/2023 10:13:17] "GET /socket.io/?EIO=4&transport=polling&sid=yoZOiFQG5ECKYTWsAAAo HTTP/1.1" 200 -
+INFO:werkzeug:192.168.10.172 - - [09/Jun/2023 10:13:18] "GET /socket.io/?EIO=4&transport=polling HTTP/1.1" 200 -
+INFO:werkzeug:192.168.10.172 - - [09/Jun/2023 10:13:18] "POST /socket.io/?EIO=4&transport=polling&sid=zuwH_-TX5KWXfsGTAAAq HTTP/1.1" 200 -
+INFO:werkzeug:192.168.10.172 - - [09/Jun/2023 10:13:18] "GET /socket.io/?EIO=4&transport=polling&sid=zuwH_-TX5KWXfsGTAAAq HTTP/1.1" 200 -
+INFO:werkzeug:192.168.10.172 - - [09/Jun/2023 10:13:28] "POST /socket.io/?EIO=4&transport=polling&sid=zuwH_-TX5KWXfsGTAAAq HTTP/1.1" 200 -
+INFO:werkzeug:192.168.10.172 - - [09/Jun/2023 10:13:28] "GET /socket.io/?EIO=4&transport=polling&sid=zuwH_-TX5KWXfsGTAAAq HTTP/1.1" 200 -
+INFO:werkzeug:192.168.10.172 - - [09/Jun/2023 10:13:29] "GET /socket.io/?EIO=4&transport=polling HTTP/1.1" 200 -
+INFO:werkzeug:192.168.10.172 - - [09/Jun/2023 10:13:29] "POST /socket.io/?EIO=4&transport=polling&sid=NcTeXWiwvMpkLgYxAAAs HTTP/1.1" 200 -
+INFO:werkzeug:192.168.10.172 - - [09/Jun/2023 10:13:29] "GET /socket.io/?EIO=4&transport=polling&sid=NcTeXWiwvMpkLgYxAAAs HTTP/1.1" 200 -
+INFO:werkzeug:192.168.10.172 - - [09/Jun/2023 10:13:40] "POST /socket.io/?EIO=4&transport=polling&sid=NcTeXWiwvMpkLgYxAAAs HTTP/1.1" 200 -
+INFO:werkzeug:192.168.10.172 - - [09/Jun/2023 10:13:40] "GET /socket.io/?EIO=4&transport=polling&sid=NcTeXWiwvMpkLgYxAAAs HTTP/1.1" 200 -
+INFO:werkzeug:192.168.10.172 - - [09/Jun/2023 10:13:41] "GET /socket.io/?EIO=4&transport=polling HTTP/1.1" 200 -
+INFO:werkzeug:192.168.10.172 - - [09/Jun/2023 10:13:41] "POST /socket.io/?EIO=4&transport=polling&sid=OO3tO_z2Qr6N_oT9AAAu HTTP/1.1" 200 -
+INFO:werkzeug:192.168.10.172 - - [09/Jun/2023 10:13:41] "GET /socket.io/?EIO=4&transport=polling&sid=OO3tO_z2Qr6N_oT9AAAu HTTP/1.1" 200 -
+INFO:werkzeug:192.168.10.172 - - [09/Jun/2023 10:13:51] "POST /socket.io/?EIO=4&transport=polling&sid=OO3tO_z2Qr6N_oT9AAAu HTTP/1.1" 200 -
+INFO:werkzeug:192.168.10.172 - - [09/Jun/2023 10:13:51] "GET /socket.io/?EIO=4&transport=polling&sid=OO3tO_z2Qr6N_oT9AAAu HTTP/1.1" 200 -
+INFO:werkzeug:192.168.10.172 - - [09/Jun/2023 10:13:52] "GET /socket.io/?EIO=4&transport=polling HTTP/1.1" 200 -
+INFO:werkzeug:192.168.10.172 - - [09/Jun/2023 10:13:52] "POST /socket.io/?EIO=4&transport=polling&sid=85bObc6K6IQ9i_r0AAAw HTTP/1.1" 200 -
+INFO:werkzeug:192.168.10.172 - - [09/Jun/2023 10:13:52] "GET /socket.io/?EIO=4&transport=polling&sid=85bObc6K6IQ9i_r0AAAw HTTP/1.1" 200 -
+INFO:werkzeug:192.168.10.172 - - [09/Jun/2023 10:14:02] "POST /socket.io/?EIO=4&transport=polling&sid=85bObc6K6IQ9i_r0AAAw HTTP/1.1" 200 -
+INFO:werkzeug:192.168.10.172 - - [09/Jun/2023 10:14:02] "GET /socket.io/?EIO=4&transport=polling&sid=85bObc6K6IQ9i_r0AAAw HTTP/1.1" 200 -
+INFO:werkzeug:192.168.10.172 - - [09/Jun/2023 10:14:03] "GET /socket.io/?EIO=4&transport=polling HTTP/1.1" 200 -
+INFO:werkzeug:192.168.10.172 - - [09/Jun/2023 10:14:03] "POST /socket.io/?EIO=4&transport=polling&sid=yyjIHm_5o96CWMsfAAAy HTTP/1.1" 200 -
+INFO:werkzeug:192.168.10.172 - - [09/Jun/2023 10:14:03] "GET /socket.io/?EIO=4&transport=polling&sid=yyjIHm_5o96CWMsfAAAy HTTP/1.1" 200 -
+INFO:werkzeug:192.168.10.172 - - [09/Jun/2023 10:14:28] "GET /socket.io/?EIO=4&transport=polling&sid=yyjIHm_5o96CWMsfAAAy HTTP/1.1" 200 -

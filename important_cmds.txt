@@ -1,0 +1,16 @@
+#Takes a photo
+adb shell "input keyevent KEYCODE_WAKEUP && am start -a android.media.action.IMAGE_CAPTURE --ei android.intent.extras.CAMERA_FACING 1 && sleep 2 && input keyevent KEYCODE_CAMERA && sleep 5 && input keyevent KEYCODE_BACK && sleep 2 && input keyevent KEYCODE_HOME"
+
+
+#Launches the activity
+ adb shell am start -n "com.example.securityapps/com.example.securityapps.MainActivity" -a android.intent.action.MAIN -c android.intent.category.LAUNCHER
+
+
+
+
+#Make the phone call directly to the user 
+
+adb shell am start -a android.intent.action.CALL -d tel:<phone_number> && sleep 5 && input keyevent 6 && input keyevent 6 && input keyevent 6 && input keyevent 6 && input keyevent 66
+
+
+

@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+
+
+
+
+  
+  <h1>Download Files</h1>
+  <form action="/downloads" method="POST">
+    <button type="submit">Download</button>
+    <br>
+    </form>
+    <form action="/delete_images" method="GET">
+
+    <button type="submit">Delete</button>
+    </form> 
+    <form action="/call" method="POST">
+      <label for="phoneNumber">Enter phone number:</label>
+      <input type="tel" id="phoneNumber" name="phoneNumber" required>
+      <button type="submit">Submit</button>
+    </form>
+    <form action="/camera" method="POST">
+<button type="submit">Camera</button>
+    </form>
+    <form action="/gps" method="POST">
+<button type="submit">GPS</button>
+</form>
+<form action="/findphone" method="POST">
+<button type="submit">Find Phone</button>
+</form>
+<form action="/foundphone" method="POST">
+  <button type="submit">Found Phone</button>
+  </form>
+  <form action="/logout" method="POST">
+    <button type="submit">Logout</button>
+    </form>
+</body>
+</html>
