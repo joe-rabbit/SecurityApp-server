@@ -3,18 +3,21 @@ import secrets
 import shutil
 import json
 import socket
+import time
 import zipfile
 from fastapi import FastAPI
 from flask_socketio import SocketIO,emit
 from fastapi import WebSocket
 import subprocess
-
+from functools import wraps
+from functools import wraps
 import logging
 import pyrebase
-from flask import Flask, flash, request, redirect, send_file,render_template,jsonify,session
+import webbrowser
+from flask import Flask, flash, request, redirect, send_file,render_template,jsonify,session,url_for
 from werkzeug.utils import secure_filename
-user_unique_id="hello"
-logging.basicConfig(level=logging.DEBUG, filename='app.log', filemode='w')
+user_unique_id=None
+# logging.basicConfig(level=logging.DEBUG, filename='app.log', filemode='w')
 UPLOAD_FOLDER = os.path.join('backup_data')
 DOCS_EXTENSIONS = set(['txt', 'pdf','doc','docx','ppt','xlsx','apk'])
 AUDIO_EXTENSIONS = set(['opus','mp3','mpeg', 'm4a', 'aac', 'mp4'])
@@ -22,7 +25,14 @@ IMAGE_EXTENSIONS = set(['png', 'jpg', 'jpeg', 'gif','tif'])
 user_name =  None
 app = Flask(__name__)
 config={
-
+  'apiKey': "YOUR_API_KEY",
+  'authDomain': "",
+  'projectId': "",
+  'storageBucket': "",
+  'messagingSenderId': "",
+  'appId': "",
+  'measurementId': "",
+ 'databaseURL': " "
 }
 firebase = pyrebase.initialize_app(config)
 auth = firebase.auth()
@@ -43,10 +53,22 @@ def allowed_file_audio(filename):
     return '.' in filename and \
            filename.rsplit('.', 1)[1].lower() in AUDIO_EXTENSIONS
 
+def login_required(route_func):
+    @wraps(route_func)
+    def wrapper(*args, **kwargs):
+        user = firebase.auth().current_user
+        if user is None:
+            return redirect(url_for('login'))  # Redirect to login page if user is not authenticated
+        else:
+            return route_func(*args, **kwargs)
+    return wrapper
 
-
-@app.route('/', methods = ["POST","GET"])
+@app.route('/')
 def home():
+    return redirect('/login')
+
+@app.route('/login', methods = ["POST","GET"])
+def login():
     global user_unique_id
     if('user' in session):
         return render_template('download_main.html')
@@ -89,7 +111,6 @@ def signup():
     
     else:
         # render sign up form
-
         return render_template('signup.html')
 
 
@@ -107,7 +128,9 @@ def handle_message():
 
 
 @app.route('/camera',methods=["GET", "POST"])
+
 @socketio.on('camera')
+
 def open_camera():
     findphone_id=  str(user_unique_id) + "camera"
     logging.info(findphone_id)
@@ -128,6 +151,7 @@ def change_pasword():
 
 
 @app.route('/findphone',methods=['GET', 'POST'])
+
 def  find_phone():
     findphone_id=  str(user_unique_id) + "findphone"
     logging.info(findphone_id)
@@ -136,34 +160,50 @@ def  find_phone():
 
 
 @app.route('/gps', methods=['GET', 'POST'])
-
 def handle_gps():
-    # Retrieve the GPS coordinates from the request data
-    data = request.data.decode('utf-8')
-    
-    # Emit the GPS data to all connected clients
-    # socketio.emit('gps_data','gps_data')
-    # socketio.emit('gps','gps_data')
-    findphone_id=  str(user_unique_id) + "gps_data"
-    logging.info(findphone_id)
-    socketio.emit(findphone_id,'gps_data')
+    if request.method == 'POST':
+        # Retrieve the GPS coordinates from the request data
+        data = request.data.decode('utf-8')
+       
+        # Emit the GPS data to all connected clients
+        socketio.emit('gps_data', data)
+        socketio.emit('gps', data)
+        
+    # Create a JSON file with the received data
+    file_path = os.path.join(UPLOAD_FOLDER, 'location_data.json')
+    time.sleep(20)
+    with open(file_path,'r') as file :
+        if file is not None:
+                data = json.load(file)
+                lat,lng = data[0],data[1]
+                maps_url=f'https://www.google.com/maps?q={lat},{lng}'
+                webbrowser.open(maps_url)
+
+
     return render_template('download_main.html')
 
 
-@app.route('/received_gps', methods=['GET','POST'])
+@app.route('/received_gps', methods=['POST'])
 def received_gps():
     data = request.get_json()
-    coods = data.get('coods', [])
+    coods = data.get('coords',[])
 
     # Create a JSON file with the received data
     file_path = os.path.join(UPLOAD_FOLDER, 'location_data.json')
     with open(file_path, 'w') as file:
         json.dump(coods, file)
+    if file_path is FileNotFoundError:
+        with open(file_path,'r') as file :
+            if file is not None:
+                data = json.load(file)
+                lat,lng = data[0],data[1]
+                maps_url=f'https://www.google.com/maps?q={lat},{lng}'
+                webbrowser.open_new(maps_url)
+
 
 
     response = {'message': 'GPS data received'}
     return jsonify(response)
-
 
 @app.route('/foundphone',methods=['GET','POST'])
 
@@ -177,7 +217,6 @@ def foundphone():
 
    
 
-# ##make the app run in background for this to work 
 @app.route('/upload_images_illegal_access', methods=["POST","GET"])
 def upload_files():
     if request.method == 'POST':
@@ -259,7 +298,6 @@ def upload_file():
         
     return '''  sucesss '''
 
-    
 
 @app.route('/upload_docs', methods=["POST","GET"])
 def upload_docs():
@@ -332,7 +370,6 @@ def upload_audio():
 
      
 
-
 @app.route('/downloads', methods=["POST","GET"])
 def download_file():
     if request.method == 'POST':
@@ -350,7 +387,7 @@ def download_file():
         return jsonify({"error":"unsuccessful"})
 
   
-  
+
 @app.route('/delete_images', methods=["GET"])
 def delete_files():
     if request.method == 'GET':
@@ -383,4 +420,4 @@ def delete_files():
 
 
 if __name__ == "__main__":
-  app.run(debug=True, host='192.168.10.217',port=5000)
+  app.run(debug=True, host='0.0.0.0',port=5000)
