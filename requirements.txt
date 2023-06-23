@@ -1,4 +1,4 @@
-
+eventlet
 fastapi
 firebase-admin
 Flask
@@ -24,7 +24,6 @@ httpcore
 httplib2
 httpx
 idna
-
 oauth2client
 packaging
 pycryptodome==3.18.0
@@ -34,7 +33,7 @@ python-dateutil
 python-engineio
 python-jwt
 python-socketio
-Pyrebase
+Pyrebase4
 requests
 requests-toolbelt
 rfc3986
@@ -46,7 +45,6 @@ simple-websocket
 sip
 six
 sniffio
-
 SQLAlchemy
 starlette
 uvicorn
