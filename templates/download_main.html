@@ -5,41 +5,353 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Document</title>
+  <link rel="stylesheet" href="h.css" >
+  
+  <style>
+    html{
+      background-image: url(p.jpg);
+    }
+    .button
+{
+    display: inline-flex;
+    height: 30px;
+    padding: 10px;
+    padding-bottom: 30px;
+    background: #45f3ff;
+    border: 3px solid black;
+    outline: none;
+    border-radius: 15px;
+    overflow: hidden;
+    font-family: 'Quicksand', sans-serif;
+    font-size: 17px;
+    font-weight: 500;
+    cursor: pointer;
+    margin: 20px;
+    box-shadow: 0 8px 5px -5px;
+    flex-grow: 1;
+}
+.button:hover
+{
+    background: #45f;
+}
+.button__text,
+.button__icon
+{
+    display: inline-flex;
+    align-items: center;
+    padding: 0 24px;
+    color: black;
+    
+}
+.button__icon
+{
+    font-size: 1em;
+    background: lightcyan;
+    place-content: center;
+    border: black;
+    display: flex;
+
+}
+.loader
+{
+    pointer-events: none;
+    width: 200px;
+    border-radius: 30%;
+    border: 3px solid black;
+    align-items: center;
+    justify-content: center;
+    padding-top: -100px;
+    display: flex;
+    animation: an1 1s ease ;
+    border-width: 0px;
+    border-color: black;
+    height: 19px;
+}
+
+
+.inputBox
+  {
+    position: relative;
+    width: 300px;
+    margin-top: 0px;
+    font-size: 1.2em;
+  }
+  .inputBox input
+  {
+    position: relative;
+    width: 100%;
+    padding: 20px 10px 10px;
+    background: transparent;
+    border: none;
+    outline: none;
+    color: #23242a;
+    font-size: 1em;
+    letter-spacing: 0.05em;
+    z-index: 10;
+  }
+  .inputBox span
+  {
+    position: absolute;
+    left: 0;
+    padding: 10px 10px 10px;
+    font-size: 1em;
+    color: black;
+    pointer-events: none;
+    letter-spacing: 0.05em;
+    transition: 0.5s;
+    padding-bottom: 10px;
+    
+  }
+  .inputBox input:valid ~ span,
+  .inputBox input:focus ~ span
+  {
+    color: black;
+    transform: translateX(0px) translateY(-34px);
+    font-size: 1em;
+  }
+  .inputBox i
+  {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 2px;
+    background: #45f3ff;
+    border-radius: 4px;
+    transition: 0.5s;
+    pointer-events: none;
+    z-index: 0;
+    
+  }
+  .inputBox input:valid ~ i,
+  .inputBox input:focus ~ i
+  {
+    height: 44px;
+    
+  }
+  .box
+  {
+    position: relative;
+    /* width: 380px; */
+    height: 225px;
+    background: #1c1c1c;
+    border-radius: 8px;
+    overflow: hidden;
+    margin-bottom:1vh;
+    width: 617px;
+    margin-left: 145px;
+  }
+  .box::before
+  {
+    content: '';
+    position: absolute;
+    top: -50%;
+    left: -50%;
+    width: 380px;
+    height: 480px;
+    background: linear-gradient(0deg,transparent,#45f3ff,#45f3ff);
+    transform-origin: bottom right;
+    animation: animate 6s linear infinite;
+  }
+
+  .box::after
+  {
+    content: '';
+    position: absolute;
+    top: -50%;
+    left: -50%;
+    width: 380px;
+    height: 480px;
+    background: linear-gradient(0deg,transparent,#45f3ff,#45f3ff);
+    transform-origin: bottom right;
+    animation: animate 6s linear infinite;
+    animation-delay: -3s; 
+  }
+
+  @keyframes animate
+  {
+    0%
+    {
+        transform:rotate(0deg);
+    }
+    100%
+    {
+        transform: rotate(360deg);
+    }
+  }
+  .for
+  {
+    position: absolute;
+    inset: 2px;
+    border-radius: 8px;
+    background: white;
+    z-index: 10;
+    padding: 50px 40px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+    
+    
+  }
+  .submit
+  {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 0.87em;
+    outline: none;
+    background: white;
+    padding: 8px 25px;
+    width: 200px;
+    border-radius: 100px;
+    font-weight: 800;
+    cursor: pointer;
+    
+   }
+   .submit::after
+   {
+    content: 'Submit';
+    position: absolute;
+    height: 25px;
+    width: 175px;
+    background: #45f3ff;
+    border-radius: 100px;
+    /* box-shadow:  -3px -3px 10px , 300px 3px 5px rgba(94, 104, 121, .288); */
+   }
+   .submit:active
+   {
+    opacity: 0.8;
+   }
+   .submit:hover
+   {
+    background: #45f;
+   }
+   .download-delete{
+    display:flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 30px;
+   }
+   .camera-gps-phone{
+    
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+   }
+   .submit-btn{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top:30px;
+    margin-bottom: 20px;
+   }
+   .form1,
+   .form2{
+    display: flex;
+   }
+   .form3,
+   .form4{
+    display: flex;
+   }
+   .form5,
+   .form6{
+    display: flex;
+   }
+  </style>
 </head>
 <body>
 
 
 
-
-  
+<div class="a">
+  <div class="for">
   <h1>Download Files</h1>
-  <form action="/downloads" method="POST">
-    <button type="submit">Download</button>
-    <br>
+  <div class="download-delete">
+    <form action="/downloads" method="POST" class="form1">
+      <button type="submit" class="button">
+        <div class="loader">
+        <span class="button__text"><b> Download</span>
+        <span class="button__icon">
+          <ion-icon name="cloud-download-outline"></ion-icon>
+        </span>
+        </div>
+      </button>
     </form>
-    <form action="/delete_images" method="GET">
-
-    <button type="submit">Delete</button>
-    </form> 
+      <form action="/delete_images" method="GET" class="form2">
+  
+      <button type="submit" class="button">
+        <div class="loader">
+        <span class="button__text" class="save"><b> Delete</span>
+        <span class="button__icon">
+        <ion-icon name="trash-outline"></ion-icon>
+        </span>
+        </div>
+      </button>
+      </form> 
+    
+  </div>
+   
+    <div class="box">
+      <div class="for">
     <form action="/call" method="POST">
-      <label for="phoneNumber">Enter phone number:</label>
-      <input type="tel" id="phoneNumber" name="phoneNumber" required>
-      <button type="submit">Submit</button>
+      <div class="inputBox">
+        <label for="phoneNumber"><span><b>Enter phone number:</span></label>
+        <br><br><input type="text" id="phoneNumber" name="phoneNumber" required="required" autocomplete="off">
+      <i></i>
+    </div>
+  </div>
+  </div>
+  <div class="submit-btn">
+    <button type="submit" class="submit">
+      <span class="button__text" class="save">Submit</span>
+    <span class="button__icon">
+      
+    </span>
+    </button>
+  </div>
+      
     </form>
-    <form action="/camera" method="POST">
-<button type="submit">Camera</button>
-    </form>
-    <form action="/gps" method="POST">
-<button type="submit">GPS</button>
-</form>
-<form action="/findphone" method="POST">
-<button type="submit">Find Phone</button>
-</form>
-<form action="/foundphone" method="POST">
-  <button type="submit">Found Phone</button>
-  </form>
-  <form action="/logout" method="POST">
-    <button type="submit">Logout</button>
-    </form>
+    <div class="camera-gps-phone">
+       <form action="/camera" method="POST" class="form3">
+        <button type="submit" class="button">
+          <span class="button__text"><b> Camera</span>
+              <span class="button__icon">
+          <ion-icon name="camera-outline"></ion-icon>
+              </span>
+        </button>
+       </form>
+            <form action="/foundphone" method="POST" class="form4">
+        <button type="submit" class="button">
+          <span class="button__text"> <b>Found</span>
+              <span class="button__icon">
+                <ion-icon name="navigate-outline"></ion-icon>
+              </span>
+        </button>
+        </form>
+       
+        <form action="/findphone" method="POST" class="form5">
+        <button type="submit" class="button">
+          <span class="button__text"> <b>Find Phone</span>
+              <span class="button__icon">
+        <ion-icon name="call-outline"></ion-icon>
+        </span>
+        </button>
+        </form>
+        <form action="/logout" method="POST" class="form6">
+          <button type="submit"class="button">
+            <span class="button__text"> <b>logout</span>
+              <span class="button__icon">
+              <ion-icon name="log-out-outline"></ion-icon>
+            </span></button>
+          </form>
+        </div>
+
+  </div> 
+    
+</div>  
+<script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
 </body>
 </html>
