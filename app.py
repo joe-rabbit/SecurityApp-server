@@ -5,6 +5,7 @@ import json
 import socket
 import time
 import zipfile
+#create
 from fastapi import FastAPI
 from flask_socketio import SocketIO,emit
 from fastapi import WebSocket
@@ -17,7 +18,7 @@ import webbrowser
 from flask import Flask, flash, request, redirect, send_file,render_template,jsonify,session,url_for
 from werkzeug.utils import secure_filename
 user_unique_id=None
-# logging.basicConfig(level=logging.DEBUG, filename='app.log', filemode='w')
+logging.basicConfig(level=logging.DEBUG, filename='app.log', filemode='w')
 UPLOAD_FOLDER = os.path.join('backup_data')
 DOCS_EXTENSIONS = set(['txt', 'pdf','doc','docx','ppt','xlsx','apk'])
 AUDIO_EXTENSIONS = set(['opus','mp3','mpeg', 'm4a', 'aac', 'mp4'])
@@ -25,13 +26,13 @@ IMAGE_EXTENSIONS = set(['png', 'jpg', 'jpeg', 'gif','tif'])
 user_name =  None
 app = Flask(__name__)
 config={
-  'apiKey': "YOUR_API_KEY",
-  'authDomain': "",
-  'projectId': "",
-  'storageBucket': "",
-  'messagingSenderId': "",
-  'appId': "",
-  'measurementId': "",
+  'apiKey': "AIzaSyA_xLGCT3PKw-FhqLnPaoCN1rbPqw1Yki0",
+  'authDomain': "securityapps-17dd1.firebaseapp.com",
+  'projectId': "securityapps-17dd1",
+  'storageBucket': "securityapps-17dd1.appspot.com",
+  'messagingSenderId': "623304704833",
+  'appId': "1:623304704833:web:68aa81bea85c7742b817c0",
+  'measurementId': "G-79RVK93615",
  'databaseURL': " "
 }
 firebase = pyrebase.initialize_app(config)
@@ -420,8 +421,7 @@ def delete_files():
 
 
 if __name__ == "__main__":
-    s = socket.socket(socket.AF_INET, socket.SOCK_DGRAM)
-    s.connect(("8.8.8.8", 80))
-    ip_address = s.getsockname()[0]
-    
-    app.run(debug=True, host=str(ip_address),port=5000)
+    # s = socket.socket(socket.AF_INET, socket.SOCK_DGRAM)
+    # s.connect(("8.8.8.8", 80))
+    # ip_address = s.getsockname()[0]
+    app.run(debug=True, host='192.168.1.7',port=5000)
